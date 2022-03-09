@@ -4,11 +4,11 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-12.0.0_r29"
+  <default revision="refs/tags/android-12.1.0_r1"
            remote="aosp"
            sync-j="4" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-12.0.0_r29" />
+  <superproject name="platform/superproject" remote="aosp" revision="android-12.1.0_r1" />
   <contactinfo bugurl="go/repo-bug" />
 
   <project path="build/make" name="platform/build" groups="pdk" >
@@ -105,7 +105,7 @@
   <project path="device/ti/beagle_x15-kernel" name="device/ti/beagle-x15-kernel" groups="device,beagle_x15,pdk" clone-depth="1" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/abseil-cpp" name="platform/external/abseil-cpp" groups="pdk" />
-  <project path="external/adhd" name="platform/external/adhd" groups="pdk" />
+  <project path="external/adhd" name="platform/external/adhd" groups="pdk" remote="aosp" revision="android-12.0.0_r29" />
   <project path="external/adt-infra" name="platform/external/adt-infra" groups="adt-infra,notdefault,pdk-fs" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk" />
   <project path="external/androidplot" name="platform/external/androidplot" groups="pdk" />
@@ -646,7 +646,7 @@
   <project path="external/vboot_reference" name="platform/external/vboot_reference" groups="vboot,pdk-fs" />
   <project path="external/virglrenderer" name="platform/external/virglrenderer" groups="pdk" />
   <project path="external/vixl" name="platform/external/vixl" groups="pdk" />
-  <project path="external/vm_tools/p9" name="platform/external/vm_tools/p9" groups="pdk" />
+  <project path="external/vm_tools/p9" name="platform/external/vm_tools/p9" groups="pdk" remote="aosp" revision="android-12.0.0_r29" />
   <project path="external/vogar" name="platform/external/vogar" groups="pdk" />
   <project path="external/volley" name="platform/external/volley" groups="pdk" />
   <project path="external/vulkan-headers" name="platform/external/vulkan-headers" groups="pdk" />
