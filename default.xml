@@ -1104,5 +1104,6 @@
   <include name="snippets/voltage.xml" />
   <include name="snippets/lineage.xml" />
   <include name="snippets/proton.xml" />
+  <include name="snippets/raphael.xml" />
 
 </manifest>
