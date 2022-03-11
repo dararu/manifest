@@ -2,13 +2,15 @@
   <img src="https://i.imgur.com/32ihEhr.png"/>
 </p>
 
-### Sync ###
+### Sync
+
 ```bash
-        repo init -u https://github.com/VoltageOS/manifest -b 12
+        repo init -u https://github.com/VoltageOS/manifest -b 12.1
         repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
-### Build ###
+### Build
+
 ```bash
 	. build/envsetup.sh
         brunch device
